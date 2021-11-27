@@ -11,7 +11,7 @@
 	<groupId>com.new_project</groupId>
 	<artifactId>Inventory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>com.new_project.Inventory.Inventory</name>
+	<name>Inventory</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -32,10 +32,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
 
