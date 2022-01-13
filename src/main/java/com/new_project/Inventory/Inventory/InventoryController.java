@@ -1,30 +1,15 @@
 package com.new_project.Inventory.Inventory;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-@RequestMapping(path = "api/v1/Inventory")
 public class InventoryController {
-    private final InventoryService inventoryService;
 
-    @Autowired
-    public InventoryController(InventoryService inventoryService) {
-        this.inventoryService = inventoryService;
+    @GetMapping("/inventory")
+    public InventoryVariable getInventoryVariable(){
+        return new InventoryVariable("1","product 1", 2);
     }
 
-//    @GetMapping
-//    public List<InventoryVariables> InventoryList(){
-//        return inventoryService.getInventoryList();
-//    }
 
-    @PostMapping
-    public String InventoryItem(){
-        return inventoryService.createInventoryList();
-    }
 }
